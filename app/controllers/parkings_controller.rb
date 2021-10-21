@@ -8,7 +8,6 @@ class ParkingsController < ApplicationController
   end
 
   def new
-    @parking = Parking.new(params[:parking])
-    @parking.save
+    @parking = Parking.new
   end
 end

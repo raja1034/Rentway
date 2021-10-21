@@ -1,0 +1,8 @@
+
+<h1>Checkout all our parkings 🚀</h1>
+
+<ul>
+  <% @parkings.each do |parking| %>
+    <li><%= link_to parking.title, parking_path(parking) %></li>
+  <% end %>
+</ul>

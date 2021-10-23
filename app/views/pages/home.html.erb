@@ -4,6 +4,59 @@
     <h1>Rentway </h1>
     <p> Find your parking spot effortlessly.
     </p>
-    <a class="btn btn-flat" href="#">Find your spot </a>
+    <%= link_to "Find your spot", parkings_path, class: "btn btn-flat" %>
   </div>
+</div>
+
+<div class="container">
+
+  <div class="card-trip">
+    <img src="https://images.unsplash.com/photo-1604063155785-ee4488b8ad15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80)" />
+    <div class="card-trip-infos">
+    <div>
+      <h2> Beautiful Parking spot in the middle of the city </h2>
+      <p> Amazing spot, I use it myself a lot and I am on holidays for 2 weeks </p>
+    </div>
+      <h2 class="card-trip-pricing">Hamburg</h2>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+
+</div>
+
+<div class="container">
+<%= link_to "Discover more spots", parkings_path, class: "btn btn-flat" %>
+</div>
+
+<div class="container">
+
+<h2> Discover our parking categories</h2>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1604063155785-ee4488b8ad15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80)">
+    Parking with roof
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1526626607369-f89fe1ed77a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80)">
+    Parking without roof
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80)">
+    Luxury Parking
+  </div>
+</div>
+
+<div>
+
+<div class="container">
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/raja1034/Rentway"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-figma"></i></a>
+    <a href="https://www.linkedin.com/company/rentwayapp"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Rentway created with <i class="fas fa-heart"></i> @ LeWagon Batch 671
+  </div>
+</div>
+
 </div>

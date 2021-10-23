@@ -1,12 +1,22 @@
 
 <div class="container">
-<h1>Checkout all our parkings 🚀</h1>
+<h1 class="text-center">Checkout all our parkings 🚗</h1>
 
 <ul>
   <% @parkings.each do |parking| %>
-    <li><%= link_to parking.title, parking_path(parking) %></li>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1604063155785-ee4488b8ad15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80)" />
+      <div class="card-trip-infos">
+      <h2> <%= link_to parking.title, parking_path(parking) %> </h2>
+      <h2 class="card-trip-pricing"><%= parking.city %></h2>
+      </div>
+      <p class="ml-3"> <%= parking.description %> </p>
+
+    </div>
   <% end %>
 </ul>
+
+
 
 <%= link_to "Create a new parking", new_parking_path, class: "btn btn-flat" %>
 </div>

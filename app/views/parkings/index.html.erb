@@ -2,7 +2,7 @@
 <div class="container">
 <h1 class="text-center">Checkout all our parkings 🚗</h1>
 
-<ul>
+
   <% @parkings.each do |parking| %>
     <div class="card-trip">
       <img src="https://images.unsplash.com/photo-1604063155785-ee4488b8ad15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80)" />
@@ -14,9 +14,9 @@
 
     </div>
   <% end %>
-</ul>
 
+<div class="container text-center">
+<%= link_to "Create a new parking", new_parking_path, class: "btn btn-flat text-center" %>
+</div>
 
-
-<%= link_to "Create a new parking", new_parking_path, class: "btn btn-flat" %>
 </div>

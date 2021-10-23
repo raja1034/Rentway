@@ -1,4 +1,5 @@
 
+<div class="container">
 <h1>Checkout all our parkings 🚀</h1>
 
 <ul>
@@ -6,3 +7,6 @@
     <li><%= link_to parking.title, parking_path(parking) %></li>
   <% end %>
 </ul>
+
+<%= link_to "Create a new parking", new_parking_path, class: "btn btn-flat" %>
+</div>

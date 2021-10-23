@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
   before_action :find_parking
-
+  def index
+    @bookings = Booking.where(user_id: current_user)
+  end
   def new
     @booking = Booking.new
   end
@@ -19,7 +21,9 @@ class BookingsController < ApplicationController
     @booking.save
     redirect_to parking_booking_path(@parking, @booking)
   end
-
+  def show
+    @booking = Booking.find(params[:id])
+  end
   private
 
   def find_parking

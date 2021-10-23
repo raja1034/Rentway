@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
   before_action :find_parking
-
+  def index
+    @bookings = Booking.where(user_id: current_user)
+  end
   def new
     @booking = Booking.new
   end

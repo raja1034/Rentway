@@ -1,1 +1,20 @@
-<h1>This is a new test for booking</h1>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Book your parking 🚀 </h3>
+        <h2>Title: <%= @parking.title %></h2>
+        <p> Street Address: <%= @parking.street_address %></p>
+        <p> Description: <%= @parking.description %></p>
+        <p> City: <%= @parking.city %></p>
+        <p> Category: <%= @parking.category %></p>
+        <%= simple_form_for [@parking, @booking] do |f|%>
+        <%= f.input :start_date %>
+        <%= f.input :end_date %>
+        <%= f.submit class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

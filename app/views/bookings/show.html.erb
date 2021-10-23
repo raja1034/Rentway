@@ -1,1 +1,12 @@
-<h1>This is a specific booking</h1>
+<div class="container text-center">
+  <h1 class="mb-3 mt-5" >Booking successful</h1>
+  <div>
+
+    <h2>Title: <%= @parking.title %></h2>
+    <p> Start Date : <%= @booking.start_date %><p> End Date : <%= @booking.end_date %>
+    <p> Street Address: <%= @parking.street_address %></p>
+    <p> Description: <%= @parking.description %></p>
+    <p> City: <%= @parking.city %></p>
+    <p> Category: <%= @parking.category %></p>
+    <%= link_to "History", parking_bookings_path, class: "btn btn-primary" %>
+  </div>

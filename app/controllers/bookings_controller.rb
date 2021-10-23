@@ -19,7 +19,9 @@ class BookingsController < ApplicationController
     @booking.save
     redirect_to parking_booking_path(@parking, @booking)
   end
-
+  def show
+    @booking = Booking.find(params[:id])
+  end
   private
 
   def find_parking

@@ -5,4 +5,5 @@
 <p> Description: <%= @parking.description %></p>
 <p> City: <%= @parking.city %></p>
 <p> Category: <%= @parking.category %></p>
-<input type="submit" value="Book" class="btn btn-primary mt-2" style="width: 5%">
+
+<%= link_to 'Book a parking', new_parking_booking_path(@parking) %>

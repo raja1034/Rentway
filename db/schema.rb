@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_10_26_191701) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"
-    t.float "longitude" #<--- Geocoder stoff
+    t.float "longitude"
     t.index ["user_id"], name: "index_parkings_on_user_id"
   end
 

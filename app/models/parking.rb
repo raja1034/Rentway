@@ -1,9 +1,10 @@
 class Parking < ApplicationRecord
   geocoded_by :address
-  after_validation :geocode, if: :will_save_change_to_address?
+  after_validation :geocode
   belongs_to :user
+  has_many :bookings, dependent: :destroy
 
   def address
-   [street_address, city].compact.join(', ')
+    [street_address, city].compact.join(', ')
   end
 end

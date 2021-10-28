@@ -22,8 +22,9 @@
 
 
 puts "Wiping seeds"
-Parking.destroy_all
 User.destroy_all
+Parking.destroy_all
+
 puts "Creating seeds"
 
 user_one = User.create(email: "raja@wagon.com", password: "1234534")
@@ -32,6 +33,8 @@ user_three = User.create(email: "victor@wagon.com", password: "1234534")
 user_four = User.create(email: "hannah@wagon.com", password: "1234534")
 user_five = User.create(email: "toni@wagon.com", password: "1234534")
 user_six = User.create(email: "admin@wagon.com", password: "1234534")
+
+puts "Users have been created"
 
 parking_one = Parking.create(title: "Berlin 100", street_address: "Willy-Brandt-Straße 1", description: "Bundeskanzleramt Berlin", city: "Berlin", category: "Luxery", user_id: user_two.id)
 parking_two = Parking.create(title: "Hamburg 200", street_address: "Hachmannplatz 16", description: "Hamburger Bahnhof", city: "Hamburg", category: "Germany", user_id: user_two.id)

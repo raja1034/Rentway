@@ -2,6 +2,12 @@
 <div class="container">
 <h1 class="text-center">Checkout all our parkings 🚗</h1>
 
+  <%# Geocoding part %>
+  <div id="map"
+    style="width: 100%; height: 600px;"
+    data-markers="<%= @markers.to_json %>
+    "data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
 
   <% @parkings.each do |parking| %>
     <div class="card-trip">

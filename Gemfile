@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
+gem 'geocoder'
+# geocoder Gembox for Mapbox
 gem 'simple_form'
 gem 'devise'
 

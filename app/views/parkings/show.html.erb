@@ -15,17 +15,17 @@
       <img src="https://images.unsplash.com/photo-1604063155785-ee4488b8ad15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80)" />
     <% end %>
 </div>
+  <div class="card-body">
+    <h5 class="card-title"><h2>Title: <%= @parking.title %></h2></h5>
+    <p class="card-text"><p> Description: <%= @parking.description %></p></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><p> Street Address: <%= @parking.street_address %></p></li>
+    <li class="list-group-item"><p> City: <%= @parking.city %></p></li>
+    <li class="list-group-item"><p> Category: <%= @parking.category %></p></li>
+  </ul>
 
-<h2>Title: <%= @parking.title %></h2>
-<p> Street Address: <%= @parking.street_address %></p>
-<p> Description: <%= @parking.description %></p>
-<p> City: <%= @parking.city %></p>
-<p> Category: <%= @parking.category %></p>
-
-
-
-<%= link_to 'Book a parking', new_parking_booking_path(@parking) %>
-
+  <%= link_to 'Book a parking', new_parking_booking_path(@parking), class: "btn btn-primary text-center" %>
 </div>
 </div>
 </div>

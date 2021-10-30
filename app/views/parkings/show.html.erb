@@ -8,11 +8,16 @@
     <div class="col-12 col-md-6 offset-lg-3">
       <div class="bg-white rounded p-3 shadow">
 
+<div class="card-trip">
+<%= cl_image_tag @parking.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
+
 <h2>Title: <%= @parking.title %></h2>
 <p> Street Address: <%= @parking.street_address %></p>
 <p> Description: <%= @parking.description %></p>
 <p> City: <%= @parking.city %></p>
 <p> Category: <%= @parking.category %></p>
+
 
 
 <%= link_to 'Book a parking', new_parking_booking_path(@parking) %>
